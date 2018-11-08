@@ -23,4 +23,14 @@ public class MainActivity extends AppCompatActivity {
             int result = number1 + number2;
             resText.setText(Integer.toString(result));
         }
+    public void onButtonClick2 (View v) {
+        EditText num1 = (EditText)findViewById(R.id.num1);
+        EditText num2 = (EditText)findViewById(R.id.num2);
+        TextView resText = (TextView)findViewById(R.id.result);
+
+        int number1 = Integer.parseInt(num1.getText().toString());
+        int number2 = Integer.parseInt(num2.getText().toString());
+        int result = number1 - number2;
+        resText.setText(Integer.toString(result));
+    }
     }
